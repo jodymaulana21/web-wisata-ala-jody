@@ -1,0 +1,361 @@
+[
+  {
+    "nama": "Kawah Putih",
+    "kota": "Ciwidey, Kab. Bandung",
+    "provinsi": "Jawa Barat",
+    "alias_area": [
+      "Bandung",
+      "Ciwidey"
+    ],
+    "kategori": [
+      "alam",
+      "gunung",
+      "danau"
+    ],
+    "budget_per_hari_idr": 150000,
+    "waktu_terbaik": "Pagi hari, musim kemarau (Jun–Sep)",
+    "deskripsi": "Danau kawah vulkanik berwarna putih kehijauan dengan udara sejuk dan kabut tipis.",
+    "rating": 4.6
+  },
+  {
+    "nama": "Tebing Keraton",
+    "kota": "Bandung",
+    "provinsi": "Jawa Barat",
+    "alias_area": [
+      "Dago",
+      "Bandung"
+    ],
+    "kategori": [
+      "alam",
+      "gunung",
+      "sunrise"
+    ],
+    "budget_per_hari_idr": 100000,
+    "waktu_terbaik": "Subuh untuk sunrise",
+    "deskripsi": "Tebing dengan panorama hutan Taman Hutan Raya Djuanda dari ketinggian, ikonik saat matahari terbit.",
+    "rating": 4.5
+  },
+  {
+    "nama": "Orchid Forest Cikole",
+    "kota": "Lembang, Kab. Bandung Barat",
+    "provinsi": "Jawa Barat",
+    "alias_area": [
+      "Lembang",
+      "Bandung"
+    ],
+    "kategori": [
+      "alam",
+      "hutan",
+      "keluarga"
+    ],
+    "budget_per_hari_idr": 200000,
+    "waktu_terbaik": "Sore hingga malam",
+    "deskripsi": "Taman anggrek di tengah hutan pinus dengan jembatan gantung dan lampu malam.",
+    "rating": 4.4
+  },
+  {
+    "nama": "Jalan Braga & Asia Afrika",
+    "kota": "Bandung",
+    "provinsi": "Jawa Barat",
+    "alias_area": [
+      "Bandung"
+    ],
+    "kategori": [
+      "kota",
+      "sejarah",
+      "kuliner",
+      "budaya"
+    ],
+    "budget_per_hari_idr": 150000,
+    "waktu_terbaik": "Sore–malam",
+    "deskripsi": "Kawasan heritage art deco dengan kafe, galeri, dan Museum Konferensi Asia Afrika.",
+    "rating": 4.5
+  },
+  {
+    "nama": "Kebun Raya Bogor",
+    "kota": "Bogor",
+    "provinsi": "Jawa Barat",
+    "alias_area": [
+      "Bogor"
+    ],
+    "kategori": [
+      "alam",
+      "edukasi",
+      "keluarga"
+    ],
+    "budget_per_hari_idr": 120000,
+    "waktu_terbaik": "Pagi hari",
+    "deskripsi": "Kebun botani tertua di Asia Tenggara dengan ribuan koleksi tumbuhan.",
+    "rating": 4.6
+  },
+  {
+    "nama": "Candi Borobudur",
+    "kota": "Magelang",
+    "provinsi": "Jawa Tengah",
+    "alias_area": [
+      "Yogyakarta",
+      "Jogja",
+      "Magelang"
+    ],
+    "kategori": [
+      "budaya",
+      "sejarah"
+    ],
+    "budget_per_hari_idr": 300000,
+    "waktu_terbaik": "Pagi hari",
+    "deskripsi": "Candi Buddha terbesar di dunia, situs Warisan Dunia UNESCO.",
+    "rating": 4.8
+  },
+  {
+    "nama": "Malioboro & Keraton",
+    "kota": "Yogyakarta",
+    "provinsi": "DI Yogyakarta",
+    "alias_area": [
+      "Jogja",
+      "Yogyakarta"
+    ],
+    "kategori": [
+      "kuliner",
+      "budaya",
+      "belanja",
+      "kota"
+    ],
+    "budget_per_hari_idr": 200000,
+    "waktu_terbaik": "Sore–malam",
+    "deskripsi": "Jalan legendaris untuk belanja batik, angkringan, dan wisata keraton.",
+    "rating": 4.6
+  },
+  {
+    "nama": "Pantai Timang",
+    "kota": "Gunungkidul",
+    "provinsi": "DI Yogyakarta",
+    "alias_area": [
+      "Yogyakarta",
+      "Jogja"
+    ],
+    "kategori": [
+      "pantai",
+      "alam",
+      "petualangan"
+    ],
+    "budget_per_hari_idr": 250000,
+    "waktu_terbaik": "Musim kemarau",
+    "deskripsi": "Pantai karang dengan gondola tradisional menyeberang ke pulau kecil.",
+    "rating": 4.4
+  },
+  {
+    "nama": "Gunung Bromo",
+    "kota": "Probolinggo",
+    "provinsi": "Jawa Timur",
+    "alias_area": [
+      "Malang",
+      "Bromo"
+    ],
+    "kategori": [
+      "gunung",
+      "alam",
+      "sunrise"
+    ],
+    "budget_per_hari_idr": 450000,
+    "waktu_terbaik": "Mei–September",
+    "deskripsi": "Kaldera vulkanik dengan lautan pasir dan sunrise dari Penanjakan.",
+    "rating": 4.8
+  },
+  {
+    "nama": "Kawah Ijen",
+    "kota": "Banyuwangi",
+    "provinsi": "Jawa Timur",
+    "alias_area": [
+      "Banyuwangi"
+    ],
+    "kategori": [
+      "gunung",
+      "alam",
+      "petualangan"
+    ],
+    "budget_per_hari_idr": 400000,
+    "waktu_terbaik": "Dini hari, Apr–Okt",
+    "deskripsi": "Fenomena api biru (blue fire) dan danau kawah asam berwarna toska.",
+    "rating": 4.7
+  },
+  {
+    "nama": "Ubud",
+    "kota": "Gianyar",
+    "provinsi": "Bali",
+    "alias_area": [
+      "Bali",
+      "Ubud"
+    ],
+    "kategori": [
+      "budaya",
+      "alam",
+      "kuliner"
+    ],
+    "budget_per_hari_idr": 500000,
+    "waktu_terbaik": "April–Oktober",
+    "deskripsi": "Pusat seni & budaya Bali dengan sawah terasering Tegallalang dan Monkey Forest.",
+    "rating": 4.7
+  },
+  {
+    "nama": "Nusa Penida",
+    "kota": "Klungkung",
+    "provinsi": "Bali",
+    "alias_area": [
+      "Bali"
+    ],
+    "kategori": [
+      "pantai",
+      "alam",
+      "snorkeling",
+      "diving"
+    ],
+    "budget_per_hari_idr": 650000,
+    "waktu_terbaik": "April–Oktober",
+    "deskripsi": "Pulau dengan tebing Kelingking Beach dan spot snorkeling pari manta.",
+    "rating": 4.7
+  },
+  {
+    "nama": "Gili Trawangan",
+    "kota": "Lombok Utara",
+    "provinsi": "Nusa Tenggara Barat",
+    "alias_area": [
+      "Lombok"
+    ],
+    "kategori": [
+      "pantai",
+      "snorkeling",
+      "diving"
+    ],
+    "budget_per_hari_idr": 550000,
+    "waktu_terbaik": "Mei–September",
+    "deskripsi": "Pulau bebas kendaraan bermotor dengan penyu dan suasana santai.",
+    "rating": 4.5
+  },
+  {
+    "nama": "Taman Nasional Komodo",
+    "kota": "Labuan Bajo",
+    "provinsi": "Nusa Tenggara Timur",
+    "alias_area": [
+      "Labuan Bajo",
+      "Flores"
+    ],
+    "kategori": [
+      "alam",
+      "pantai",
+      "diving",
+      "petualangan"
+    ],
+    "budget_per_hari_idr": 1500000,
+    "waktu_terbaik": "April–Desember",
+    "deskripsi": "Habitat komodo dengan Pulau Padar dan Pink Beach.",
+    "rating": 4.9
+  },
+  {
+    "nama": "Danau Toba",
+    "kota": "Samosir",
+    "provinsi": "Sumatera Utara",
+    "alias_area": [
+      "Medan",
+      "Toba"
+    ],
+    "kategori": [
+      "danau",
+      "alam",
+      "budaya"
+    ],
+    "budget_per_hari_idr": 350000,
+    "waktu_terbaik": "Juni–Agustus",
+    "deskripsi": "Danau vulkanik terbesar di Asia Tenggara dengan budaya Batak di Pulau Samosir.",
+    "rating": 4.6
+  },
+  {
+    "nama": "Raja Ampat",
+    "kota": "Raja Ampat",
+    "provinsi": "Papua Barat Daya",
+    "alias_area": [
+      "Raja Ampat",
+      "Papua"
+    ],
+    "kategori": [
+      "diving",
+      "snorkeling",
+      "pantai",
+      "alam"
+    ],
+    "budget_per_hari_idr": 2500000,
+    "waktu_terbaik": "Oktober–April",
+    "deskripsi": "Surga bawah laut dengan biodiversitas karang tertinggi di dunia.",
+    "rating": 4.9
+  },
+  {
+    "nama": "Tana Toraja",
+    "kota": "Toraja Utara",
+    "provinsi": "Sulawesi Selatan",
+    "alias_area": [
+      "Makassar",
+      "Toraja"
+    ],
+    "kategori": [
+      "budaya",
+      "sejarah"
+    ],
+    "budget_per_hari_idr": 400000,
+    "waktu_terbaik": "Juli–Agustus (musim upacara)",
+    "deskripsi": "Rumah adat Tongkonan dan tradisi pemakaman unik suku Toraja.",
+    "rating": 4.6
+  },
+  {
+    "nama": "Kota Tua Jakarta",
+    "kota": "Jakarta",
+    "provinsi": "DKI Jakarta",
+    "alias_area": [
+      "Jakarta"
+    ],
+    "kategori": [
+      "sejarah",
+      "museum",
+      "kota",
+      "kuliner"
+    ],
+    "budget_per_hari_idr": 150000,
+    "waktu_terbaik": "Pagi atau sore",
+    "deskripsi": "Kawasan kolonial dengan Museum Fatahillah dan sepeda ontel warna-warni.",
+    "rating": 4.3
+  },
+  {
+    "nama": "Kampung Naga",
+    "kota": "Tasikmalaya",
+    "provinsi": "Jawa Barat",
+    "alias_area": [
+      "Garut",
+      "Tasikmalaya"
+    ],
+    "kategori": [
+      "budaya",
+      "sejarah",
+      "alam"
+    ],
+    "budget_per_hari_idr": 120000,
+    "waktu_terbaik": "Pagi–siang",
+    "deskripsi": "Kampung adat Sunda yang menjaga tradisi leluhur tanpa listrik.",
+    "rating": 4.5
+  },
+  {
+    "nama": "Situ Patenggang",
+    "kota": "Ciwidey, Kab. Bandung",
+    "provinsi": "Jawa Barat",
+    "alias_area": [
+      "Bandung",
+      "Ciwidey"
+    ],
+    "kategori": [
+      "danau",
+      "alam",
+      "keluarga"
+    ],
+    "budget_per_hari_idr": 130000,
+    "waktu_terbaik": "Pagi–siang",
+    "deskripsi": "Danau di tengah kebun teh dengan legenda Batu Cinta dan perahu wisata.",
+    "rating": 4.4
+  }
+]
