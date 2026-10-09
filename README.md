@@ -1,20 +1,23 @@
-# 🧭 JelajahBot — Asisten Wisata Indonesia Berbasis AI
+# 🎋 Ngalalana — Pemandu Wisata Tatar Sunda ala Jody Maulana
 
-JelajahBot adalah chatbot **travel assistant** yang memakai LLM **Google Gemini** untuk memahami bahasa
-alami dan memberi jawaban seputar perjalanan di Indonesia: rekomendasi destinasi, itinerary, cuaca, dan
-konversi mata uang.
+**Ngalalana** (bahasa Sunda: *berkelana*) adalah chatbot pemandu wisata yang memakai LLM **Google Gemini**
+untuk memahami bahasa alami dan memberi jawaban seputar wisata **Tatar Sunda (Jawa Barat & Banten)**:
+rekomendasi destinasi, itinerary plus kuliner Sunda, cuaca, dan konversi mata uang — dengan gaya
+"Kang Jody", pemandu lokal urang Bandung.
+
+> Dibuat oleh **Jody Maulana, S.Kom.** untuk tugas proyek chatbot AI.
 
 ## ✨ Use Case & Parameter Kreatif
 
 | Parameter | Implementasi |
 |---|---|
-| **Use case** | Travel assistant khusus destinasi wisata Indonesia |
+| **Use case** | Pemandu wisata khusus Tatar Sunda (Jawa Barat & Banten) |
 | **Model AI** | Google Gemini (`gemini-2.5-flash`, bisa diganti via `.env`) dengan *function calling* |
-| **Gaya bahasa** | 3 persona: 😎 Santai · 🧳 Formal · 🌋 Pemandu Lokal (Sunda) |
+| **Gaya bahasa** | 3 persona: 🎋 Kang Jody (Indonesia + sisipan Sunda, default) · 😎 Santai · 🧳 Formal |
 | **Kreativitas** | Preset `temperature` & `top_p`: Presisi (0.2) · Seimbang (0.7) · Kreatif (1.1) |
-| **Domain** | System prompt membatasi topik ke wisata & perjalanan |
+| **Domain** | System prompt membatasi topik ke wisata Sunda, wajib menyelipkan kuliner Sunda & "Catetan Kang Jody" |
 | **Integrasi API eksternal** | 🌦️ Open-Meteo (cuaca + prakiraan 3 hari) · 💱 ExchangeRate-API (kurs terbaru) — keduanya gratis tanpa API key |
-| **Rekomendasi** | Katalog 20 destinasi (`data/destinations.json`) difilter berdasarkan minat, budget, dan wilayah |
+| **Rekomendasi** | Katalog 24 destinasi Sunda (Ciwidey, Lembang, Garut, Ciletuh, Kampung Naga, Baduy, dll.) (`data/destinations.json`) difilter berdasarkan minat, budget, dan wilayah |
 | **Memory** | Bot mengingat nama, kota asal, budget, dan minat pengguna (disimpan di `data/memory.json`) lalu menyuntikkannya ke system prompt |
 | **Transparansi** | Setiap pemanggilan tool tampil di UI (argumen + hasil JSON) |
 | **Mode demo** | Tanpa API key, aplikasi tetap jalan dengan engine rule-based yang memakai tools yang sama |
@@ -36,7 +39,7 @@ Pengguna ──► Streamlit UI (app.py)
 ## 📁 Struktur Proyek
 
 ```
-jelajahbot/
+jelajahbot/   (aplikasi: Ngalalana)
 ├── app.py                  # UI Streamlit
 ├── chatbot/
 │   ├── config.py           # persona, preset kreativitas, system prompt
@@ -78,15 +81,15 @@ jelajahbot/
 
 ## 💬 Contoh Pertanyaan
 
-- "Nama saya Jody, aku dari Bandung, suka wisata alam" → memory tersimpan
-- "Rekomendasi wisata alam murah dekat Bandung" → tool rekomendasi
-- "Gimana cuaca di Yogyakarta hari ini?" → API Open-Meteo
-- "Berapa 150 USD dalam Rupiah?" → API kurs
-- "Buatkan itinerary 3 hari ke Bali budget 3 juta" → LLM + rekomendasi
+- "Nama saya Jody, aku dari Bandung, suka curug dan kuliner" → memory tersimpan
+- "Rekomendasi wisata alam murah di Bandung" → tool rekomendasi
+- "Kumaha cuaca di Lembang ayeuna?" → API Open-Meteo
+- "Wisata budaya Sunda di Garut" → tool rekomendasi
+- "Itinerary 2 hari ke Ciwidey budget 1 juta" → LLM + rekomendasi + kuliner
 
 ## 🖼️ Screenshot
 
-| Tampilan awal | Rekomendasi + tool | Cuaca & kurs | Persona Formal |
+| Tampilan awal | Rekomendasi + tool | Cuaca | Persona Formal |
 |---|---|---|---|
 | ![](docs/screenshots/01-home.png) | ![](docs/screenshots/02-rekomendasi.png) | ![](docs/screenshots/03-api.png) | ![](docs/screenshots/04-formal.png) |
 

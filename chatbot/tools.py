@@ -125,13 +125,13 @@ def recommend_destinations(
     region: str = "",
     limit: int = 3,
 ) -> dict:
-    """Rekomendasikan destinasi wisata Indonesia dari katalog berdasarkan minat & budget.
+    """Rekomendasikan destinasi wisata Tatar Sunda (Jawa Barat & Banten) dari katalog berdasarkan minat & budget.
 
     Args:
-        interest: Minat wisata, misalnya "alam", "pantai", "kuliner", "budaya", "gunung".
+        interest: Minat wisata, misalnya "alam", "curug", "kebun teh", "kuliner", "budaya".
             Kosongkan jika tidak spesifik.
         max_budget_idr: Batas budget per orang per hari dalam Rupiah. 0 berarti tanpa batas.
-        region: Provinsi/kota/area, misalnya "Bandung", "Bali", "Jawa Barat". Kosongkan jika bebas.
+        region: Kota/area, misalnya "Bandung", "Garut", "Lembang". Kosongkan jika bebas.
         limit: Jumlah maksimal rekomendasi (1-5).
 
     Returns:

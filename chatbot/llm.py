@@ -79,11 +79,14 @@ class GeminiEngine:
 CURRENCY_RE = re.compile(r"([\d.,]+)\s*(usd|sgd|myr|eur|jpy|aud|krw|gbp|cny|sar|dollar|dolar|ringgit|euro|yen)", re.I)
 CURRENCY_ALIAS = {"dollar": "USD", "dolar": "USD", "ringgit": "MYR", "euro": "EUR", "yen": "JPY"}
 KNOWN_CITIES = [
-    "Bandung", "Jakarta", "Yogyakarta", "Jogja", "Bali", "Denpasar", "Ubud", "Malang", "Surabaya",
-    "Semarang", "Lombok", "Labuan Bajo", "Medan", "Bogor", "Garut", "Lembang", "Makassar",
-    "Banyuwangi", "Raja Ampat", "Toba", "Solo",
+    "Bandung Barat", "Bandung", "Lembang", "Ciwidey", "Pangalengan", "Garut", "Tasikmalaya", "Bogor",
+    "Puncak", "Sukabumi", "Cianjur", "Sumedang", "Kuningan", "Cirebon", "Pangandaran", "Purwakarta",
+    "Subang", "Majalengka", "Banten", "Serang", "Pandeglang", "Lebak", "Depok", "Bekasi",
 ]
-INTERESTS = ["pantai", "gunung", "alam", "kuliner", "budaya", "danau", "air terjun", "sejarah", "diving"]
+INTERESTS = [
+    "kebun teh", "curug", "air terjun", "pantai", "gunung", "kawah", "danau", "situ", "alam",
+    "kuliner", "budaya", "sejarah", "keluarga", "petualangan",
+]
 
 
 def _rupiah(n: float) -> str:
@@ -105,9 +108,8 @@ class DemoEngine:
         msg = user_msg.lower()
         log: list[dict] = []
         city = next((c for c in KNOWN_CITIES if c.lower() in msg), "")
-        city = "Yogyakarta" if city == "Jogja" else city
         formal = persona == "Formal"
-        sunda = persona.startswith("Pemandu")
+        sunda = persona.startswith("Kang Jody")
         you = "Anda" if formal else "kamu"
 
         if "cuaca" in msg or "hujan" in msg:
@@ -139,7 +141,7 @@ class DemoEngine:
                 text = res["catatan"]
             else:
                 intro = "Berikut rekomendasi destinasi untuk Anda:" if formal else \
-                    ("Mangga, ieu rekomendasi ti abdi:" if sunda else "Nih rekomendasi buat kamu 👇")
+                    ("Mangga, ieu rekomendasi ti abdi:" if sunda else "Nih rekomendasi wisata Sunda buat kamu 👇")
                 lines = [intro, ""]
                 for i, r in enumerate(res["hasil"], 1):
                     lines.append(f"**{i}. {r['nama']}** ({r['lokasi']}) — ⭐ {r['rating']}  \n"
@@ -150,12 +152,14 @@ class DemoEngine:
                 text = "\n".join(lines)
         elif re.search(r"\b(halo|hai|hi|pagi|siang|sore|malam|assalamualaikum)\b", msg):
             text = config.PERSONAS[persona]["greeting"]
+        elif re.search(r"\b(kumaha damang|damang)\b", msg):
+            text = "Pangestu, damang abdi mah! 😄 Mangga, bade ngalalana ka mana?"
         else:
-            text = (f"Saat ini JelajahBot berjalan di **mode demo** (tanpa API key), jadi {you} bisa mencoba: "
-                    "cek cuaca kota, konversi mata uang, atau minta rekomendasi wisata. "
+            text = (f"Saat ini Ngalalana berjalan di **mode demo** (tanpa API key), jadi {you} bisa mencoba: "
+                    "cek cuaca kota, konversi mata uang, atau minta rekomendasi wisata Tatar Sunda. "
                     "Isi `GEMINI_API_KEY` di file `.env` untuk percakapan bebas penuh dengan LLM.")
         if sunda and log:
-            text += "\n\nHatur nuhun, mugi lancar perjalananna! 🙏"
+            text += "\n\n_Catetan Kang Jody: tong hilap mawa jaket, hawa Bandung mah tiris! Hatur nuhun_ 🙏"
         return BotReply(text=text, tool_calls=log)
 
 
